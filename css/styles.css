@@ -50,6 +50,11 @@
       margin-top: 50px;
       margin-bottom: 70px;
   } 
+  .pic2{
+      width:500px;
+      height:250px;
+      margin-bottom: 20px;
+  }
   .text1{
       color:rgb(109, 19, 19);
       font-size: 40px;
@@ -57,4 +62,17 @@
   .text2{
     word-spacing: 10px;
     letter-spacing: 1px;
+  }
+  .bg{
+background-color: rgb(161, 29, 29);
+padding: 20px 20px 100px 20px;
+position: relative;
+width: 500px;
+height: 200px;
+overflow: hidden;
+top:20px;
+right:-60px; 
+font-style: italic;
+color: #f9e090;
+margin-bottom: 20px
   }
