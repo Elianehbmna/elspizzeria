@@ -1,0 +1,43 @@
+.card {
+    background-image:url("../image/header.jpg");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 800px;
+    width:100%;
+ 
+    
+    }
+    .logo {
+     width:400px;
+   height:100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top:-15px;
+   
+   }
+   .head {
+ 
+   text-align: center;
+   font-size: 65px;
+   font-style: italic;
+   color: #f9e090;
+   
+   }
+   /*.head1{
+     text-align: center;
+     display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top:400px;
+      font-size: 60px; 
+      color: #f9e090;
+      
+   }*/
+   .about{
+ text-align:center;
+   }
+   
