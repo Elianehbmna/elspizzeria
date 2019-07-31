@@ -37,7 +37,23 @@
       color: #f9e090;
       
    }*/
-   .about{
- text-align:center;
+   h1{
+    text-align:center;
+    margin-top: 90px; 
+    font-size: 50px;
    }
-   
+  span{
+    color:rgb(109, 19, 19); 
+  }
+  .pic1{
+      width:500px;
+      margin-top: 50px;
+  } 
+  .text1{
+      color:rgb(109, 19, 19);
+      font-size: 40px;
+  }
+  .text2{
+    word-spacing: 10px;
+    letter-spacing: 1px;
+  }
