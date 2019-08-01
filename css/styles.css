@@ -77,3 +77,18 @@ font-style: italic;
 color: #f9e090;
 margin-bottom: 20px
   }
+  #order{
+    margin-top: 30px;
+    background-color: rgb(161, 29, 29);
+    color: #f9e090; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  position: relative;
+  }
+#order{
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+  position: relative;
+}
