@@ -90,10 +90,18 @@ margin-bottom: 20px
   display: block;
   margin-left:440px;
   border: 7px rgb(230, 223, 223);
-  
-   
-  
-  
-
 }
 
+footer{
+  padding:30px;
+  margin-top: 20px;
+  background-color: #f9e090;
+   
+  
+}
+footer p{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #f9e090;
+}
