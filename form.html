@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>El's pizzeria</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/styles.css" rel="stylesheet" type="text/css">-->
+    <style>
+        .card{
+    background-image:url("../image/header.jpg");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 300px;
+    width:auto;
+    }
+    #sel1{
+        background-color: transparent;
+    }
+    #sel2{
+        background-color: transparent;
+    }
+    #sel3{
+        background-color: transparent;
+    }
+    #sel4{
+        background-color: transparent;
+    }
+    .order{
+ 
+ display: block;
+ margin-left:440px;
+ border: 7px rgb(230, 223, 223);
+ 
+}
+footer{
+  padding:30px;
+  margin-top: 20px;
+  background-color: #f9e090;
+   
+  
+}
+footer p{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #f9e090;
+}
+#show-contact{
+    text-align: center;
+    display:none;
+}
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container-fluid">
+        
+         
+      <div class="order">
+      <form id="orderz">
+            <div id="new-order">
+                    <div class="new-order">
+        
+            <div class="container-fluid bg-light py-3">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <div class="card card-body">
+                                    <h3 class="text-center mb-4" id="pizza">Order Pizza</h3>
+                                    
+            <label for="sel1">select the pizza type:</label>
+            <select class="form-control" id="sel1">
+                    <option>Pepperoni</option>
+                    <option>Margherita</option>
+                    <option>Hawai</option>
+                    <option>4season</option>
+                    <option>vegeterian</option>
+                  </select>
+                  <label for="sel1">select the pizza size:</label>
+                  <select class="form-control" id="sel2">
+                          <option>Large</option>
+                          <option>Medium</option>
+                          <option>Small</option>
+                         
+                        </select>
+                        <label for="sel1">select the pizza crust:</label>
+                        <select class="form-control" id="sel3">
+                                <option>Thin Crust</option>
+                                <option>Thick Crust</option>
+                                <option>Deep Crust</option>
+                                <option>Crunchy Crust</option>
+                                <option>No gluten Crust</option>
+                              </select>
+                              <label for="sel1">select the toppings:</label>
+                              <select class="form-control" id="sel4">
+                                      <option>Pepperoni</option>
+                                      <option>Mushrooms</option>
+                                      <option>Sausage</option>
+                                      <option>Extra cheese</option>
+                                      <option>Black olives</option>
+                                    </select>
+                                    
+                                    </div>
+                                    </div>
+        </div>
+        </div>
+        </div></div>
+        
+        <br><div class="row">
+            <div class="col-md-6 text-center">
+                    <span class="btn btn-primary" id="add-order">add order</span>
+                    
+                    <button type="submit" class="btn">check</button>
+             </div>
+        </div>
+            
+      </form>
+    </div>
+    
+    
+    <ul id="contacts">
+
+    </ul>
+    <div id="show-contact">
+            <h2></h2>
+            <p> type:<span class="type"></span></p>
+            <p> size:<span class="size"></span></p>
+            <p>crust: <span class="crust"></span></p>
+            <p> topping:<span class="topping"></span></p>
+            <p>Total Price:<span class="totalPrice"></span></p>
+            <p></p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+    <footer>
+            
+            <P>contact us on :0789585876</P>
+            <p>El's pizzeria</p>
+            <p>2019</p>
+          </footer>
+  
+          <script
+          src="../elspizzeria/javas/jquery-3.4.1.js"></script>
+            <script src="../elspizzeria/javas/script.js"></script>
+    </div>
+    </body>
+    </html>

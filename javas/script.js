@@ -1,29 +1,30 @@
 
-  function Pizza(type,size,crust,topping) {
+  function Pizza(type,size,crust,topping, totalPrice) {
     this.type = type;
     this.size = size;
     this.crust = crust;
     this.topping= topping;
+    this.totalPrice=totalPrice;
     this.orders = [];
   }
-  function Pizzas(type1, size1, crust1,topping1) {
+  /*function Pizzas(type1, size1, crust1,topping1) {
     this.type1 = type1;
     this.size1 = size1;
     this.crust1 = crust1;
     this.topping1 = topping1;
-  }
+  }*/
   Pizza.prototype.fullOrder = function() {
-    return this.type+ " " + this.size + " " + this.crust + " " +this.topping;
+    return this.type+ " " + this.size + " " + this.crust + " " +this.topping+ " "+this. totalPrice;
   }
   
-  Pizza.prototype.fullOrders = function() {
+  /*Pizza.prototype.fullOrders = function() {
     return this.type1+ " " +this.size1+ " " +this.crust1+ " " +this.topping1;
-  }
+  }*/
 
 $(document).ready(function() {
     
     $("#add-order").click(function() {
-      $("#new-order").append('<div class="new-order">' + ' <div class="container-fluid bg-light py-3">'+ ' <div class="row">' + ' <div class="col-md-6 mx-auto">'+
+      $("#new-order").append('<div class="new-order">' + ' <div class="container-fluid bg-light py-3">'+ ' <div class="row">' + ' <div class="col-md-6 mx-auto">'+ '<div class="card card-body">'+
                                    
                                      '<label for="sel1">select the pizza type:</label>' +
                                      ' <select class="form-control" id="sel1">'+
@@ -82,8 +83,9 @@ $(document).ready(function() {
       var sizeB = $("select#sel2").val();
       var crustC = $("select#sel3").val();
       var toppingD =$("select#sel4").val();
+     
 
-      var newPizza = new Pizza(typeA,sizeB,crustC,toppingD);
+      var newPizza = new Pizza(typeA,sizeB,crustC,toppingD,total);
   console.log(newPizza);
   
      /*$(".new-order").each(function() {
@@ -94,24 +96,82 @@ $(document).ready(function() {
         var newpizzas = new pizzas(type1,size1,crust1,topping1);
         newpizza.pizzas.push(newpizzas)
       });*/
-      $("ul#contacts").append("<li><span class='contact'>" + newPizza.fullOrder() + "</span></li>");
-  
-      $(".contact").last().click(function() {
+      /*$("ul#contacts").append("<li><span class='contact'>" + newPizza.type+ "</span></li>");*/
+    
+      $(".btn").last().click(function() {
         $("#show-contact").show();
-        $("#show-contact h2").text(newPizza.fullOrder());
+        $("#show-contact h2").text(newPizza.type);
         $(".type").text(newPizza.type);
         $(".size").text(newPizza.size);
         $(".crust").text(newPizza.crust);
         $(".topping").text(newPizza.topping);
-        /*$("ul#addresses").text("");
-        newPizza.orders.forEach(function(address) {
-          $("ul#addresses").append("<li>" + address.fullOrders() + "</li>");*/
-        });
+        $(".totalPrice").text(newPizza.totalPrice);
+
+        $("ul#addresses").text("");
+        //newPizza.orders.forEach(function(address) {
+         // $("ul#addresses").append("<li>" + address.fullOrder() + "</li>");
+       // });
       });
-  
-      $("select#sel1").val();
-      $("select#sel2").val();
-      $("select#sel3").val();
-      $("select#sel4").val();
-  
     });
+      $(".btn").click(function() {
+        var typec = $("select#sel1").val();
+      var sized = $("select#sel2").val();
+      var cruste = $("select#sel3").val();
+      var toppingd =$("select#sel4").val();
+     
+       var price, totalPrice;
+       switch (typec) {
+           case flavour = "Pepperoni":
+               switch (sized) {
+                   case size = "Small":
+                       price = 3500;
+                       if (cruste === "Thin Crust") {
+                           total = (price +1000);
+                       } else if (cruste === "Thin Crust") {
+                           total = (price + 2000);
+                       } else if (cruste === "Deep Crust") {
+                           total = (price + 2500);
+                       }else if (cruste === "Crunchy Crust") {
+                         total = (price + 1500); 
+                       }else {
+                           total = (price * number) + 5000;
+                       }
+                       break;
+                   case size = "Medium":
+                       price = 5000;
+                       if (cruste === "Thin Crust") {
+                         total = (price +1000);
+                     } else if (SVGPathSegCurvetoCubicSmoothRel === "Thin Crust") {
+                         total = (price + 2000);
+                     } else if (cruste === "Deep Crust") {
+                         total = (price + 2500);
+                     }else if (cruste === "Crunchy Crust") {
+                       total = (price + 1500); 
+                     }else {
+                         total = (price * number) + 5000;
+                     }
+                     break;
+                   case size = "Large":
+                       price = 7000;
+                       if (cruste === "Thin Crust") {
+                         total = (price +1000);
+                     } else if (cruste === "Thin Crust") {
+                         total = (price + 2000);
+                     } else if (cruste === "Deep Crust") {
+                         total = (price + 2500);
+                     }else if (cruste === "Crunchy Crust") {
+                       total = (price + 1500);
+                     }else {
+                         total = (price * number) + 5000;
+                     }
+                     break;
+               }
+               break;
+             }
+             console.log(total);
+            })
+      
+  
+    
+    
+  });
