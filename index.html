@@ -7,7 +7,7 @@
     <title>El's pizzeria</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    
     
 </head>
 <body>
@@ -158,17 +158,20 @@
                     </ol> 
                     </div> 
 </div>
+
 <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" id="order">
         Make Your Order
       </button>
       <div class="order">
-      <form >
+      <form id="orderz">
+            <div id="new-order">
+                    <div class="new-order">
         
             <div class="container-fluid bg-light py-3">
                     <div class="row">
                         <div class="col-md-6 mx-auto">
                                
-                                    <h3 class="text-center mb-4">Order Pizza</h3>
+                                    <h3 class="text-center mb-4" id="pizza">Order Pizza</h3>
             <label for="sel1">select the pizza type:</label>
             <select class="form-control" id="sel1">
                     <option>Pepperoni</option>
@@ -178,14 +181,14 @@
                     <option>vegeterian</option>
                   </select>
                   <label for="sel1">select the pizza size:</label>
-                  <select class="form-control" id="sel1">
+                  <select class="form-control" id="sel2">
                           <option>Large</option>
                           <option>Medium</option>
                           <option>Small</option>
                          
                         </select>
                         <label for="sel1">select the pizza crust:</label>
-                        <select class="form-control" id="sel1">
+                        <select class="form-control" id="sel3">
                                 <option>Thin Crust</option>
                                 <option>Thick Crust</option>
                                 <option>Deep Crust</option>
@@ -193,24 +196,43 @@
                                 <option>No gluten Crust</option>
                               </select>
                               <label for="sel1">select the toppings:</label>
-                              <select class="form-control" id="sel1">
+                              <select class="form-control" id="sel4">
                                       <option>Pepperoni</option>
                                       <option>Mushrooms</option>
                                       <option>Sausage</option>
                                       <option>Extra cheese</option>
                                       <option>Black olives</option>
                                     </select>
+                                    </div>
+                                    </div>
         </div>
         </div>
         </div>
       </form>
      <br><div class="row">
     <div class="col-md-6 text-center">
-        <button id="btnSearch" class="btn btn-primary btn-md center-inline" Style="width: 100px;" OnClick="btnSearch_Click" >More orders</button>
-         <button id="btnClear" class="btn btn-danger btn-md center-inline" Style="width: 100px;" OnClick="btnClear_Click" >check</button>
+            <span class="btn btn-primary" id="add-order">add order</span>
+            <!-- <input type="button" class="btn" value="submit" onclick="Pizza()"> -->
+            <button type="submit" class="btn">check</button>
      </div>
 </div>
     </div>
+    
+    <h2 class="recu">your order:</h2>
+    <ul id="contacts">
+
+    </ul>
+    <div id="show-contact">
+            <h2></h2>
+            <p> <span class="type"></span></p>
+            <p> <span class="size"></span></p>
+            <p> <span class="crust"></span></p>
+            <p> <span class="topping"></span></p>
+            <p></p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
     <footer>
             
             <P>contact us on :0789585876</P>
