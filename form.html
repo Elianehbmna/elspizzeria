@@ -8,8 +8,11 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <!--<link href="css/styles.css" rel="stylesheet" type="text/css">-->
     <style>
+        body{
+            background-color:rgb(146, 34, 34);
+        }
         .card{
-    background-image:url("../image/header.jpg");
+ 
     background-position: top;
     background-repeat:no-repeat;
     background-size: cover;
@@ -28,11 +31,18 @@
     #sel4{
         background-color: transparent;
     }
+    #sel5{
+        background-color: transparent;
+    }
+    #btn{
+        background-color: rgb(129, 18, 18);
+    }
     .order{
  
  display: block;
  margin-left:440px;
  border: 7px rgb(230, 223, 223);
+ color: #f9e090;
  
 }
 footer{
@@ -51,14 +61,47 @@ footer p{
 #show-contact{
     text-align: center;
     display:none;
+    color: #f9e090;
 }
+.logo {
+     width:400px;
+   height:100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top:-15px;
+   
+   }
+   .head {
+ 
+ text-align: center;
+ font-size: 65px;
+ font-style: italic;
+ color: #f9e090;
+ 
+ }
+    
     </style>
     
     
 </head>
 <body>
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                
+            <h2 class="head">EL'S</h2>
+            <!--<p class="head1">Deliciousness jumping into the mouth.</p>-->
+           <img src="image/twitter_header_photo_1.png" class="logo">
+          
+          <p class="text4"></p>
+            <p class="text5"></p>
+            <p class="text6"></p>
+        </div>
         
+            </div>
+        </div>
          
       <div class="order">
       <form id="orderz">
@@ -114,7 +157,7 @@ footer p{
             <div class="col-md-6 text-center">
                     <span class="btn btn-primary" id="delivery" onclick="send()" >delivery</span>
                     
-                    <button type="submit" class="btn">check</button>
+                    <button type="submit" class="btn" id="btn" >check</button>
              </div>
         </div>
             
