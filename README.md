@@ -26,7 +26,7 @@ my website is about my pizza shop it allows ourclients to make order online and 
 
 ## The link to live site on GitHub pages:
 
-https://elianehbmna.github.io/DelaniStudio/
+https://elianehbmna.github.io/elspizzeria/
 
 ## Copyright and license information:
 
