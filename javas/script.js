@@ -1,4 +1,9 @@
 
+  document.getElementById("delivery").addEventListener("click", function () { 
+    prompt("enter your address");
+    alert("thank you for using our services,your order willbe delivered at your place");
+    
+  })
   function Pizza(type,size,crust,topping,numbers, totalPrice) {
     this.type = type;
     this.size = size;
@@ -24,7 +29,7 @@
 
 $(document).ready(function() {
     
-    $("#add-order").click(function() {
+   /* $("#add-order").click(function() {
       $("#new-order").append('<div class="new-order">' + ' <div class="container-fluid bg-light py-3">'+ ' <div class="row">' + ' <div class="col-md-6 mx-auto">'+ '<div class="card card-body">'+
                                    
                                      '<label for="sel1">select the pizza type:</label>' +
