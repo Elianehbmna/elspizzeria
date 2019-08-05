@@ -130,7 +130,7 @@ $(document).ready(function() {
      
        var price, totalPrice;
        switch (typec) {
-           case flavour = "Pepperoni":
+           case type = "Pepperoni":
                switch (sized) {
                    case size = "Small":
                        price = 3500;
@@ -176,7 +176,7 @@ $(document).ready(function() {
                     break;
                }
                break;
-               case flavour = "Margherita":
+               case type = "Margherita":
                switch (sized) {
                 case size = "Small":
                     price = 3500;
@@ -223,7 +223,7 @@ $(document).ready(function() {
                     break;
             }
             break;
-            case flavour = "Hawai":
+            case type = "Hawai":
             switch (sized) {
              case size = "Small":
                  price = 3500;
@@ -269,7 +269,7 @@ $(document).ready(function() {
                 break;
          }
          break;
-         case flavour = "4season":
+         case type = "4season":
          switch (sized) {
           case size = "Small":
               price = 3500;
@@ -315,7 +315,7 @@ $(document).ready(function() {
             break;
       }
       break;
-      case flavour = "vegeterian":
+      case type = "vegeterian":
          switch (sized) {
           case size = "Small":
               price = 3500;
