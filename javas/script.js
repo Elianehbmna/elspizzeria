@@ -39,43 +39,43 @@ $(document).ready(function() {
                    case size = "Small":
                        price = 3500;
                        if (cruste === "Thin Crust") {
-                           total = (price +1000)* number ;
+                           total = price +1000 ;
                        } else if (cruste === "Thin Crust") {
-                           total = (price * number)+ 2000;
+                           total = price + 2000;
                        } else if (cruste === "Deep Crust") {
-                           total = (price * number)+ 2500;
+                           total = price + 2500;
                        }else if (cruste === "Crunchy Crust") {
-                         total = (price * number)+ 1500; 
+                         total = price + 1500; 
                        }else {
-                           total = (price * number) + 5000;
+                           total = price  + 5000;
                        }
                        break;
                    case size = "Medium":
                        price = 5000;
                        if (cruste === "Thin Crust") {
-                        total = (price * number) +1000;
+                        total = price +1000 ;
                     } else if (cruste === "Thin Crust") {
-                        total = (price * number)+ 2000;
+                        total = price + 2000;
                     } else if (cruste === "Deep Crust") {
-                        total = (price * number)+ 2500;
+                        total = price + 2500;
                     }else if (cruste === "Crunchy Crust") {
-                      total = (price * number)+ 1500; 
+                      total = price + 1500; 
                     }else {
-                        total = (price * number) + 5000;
+                        total = price  + 5000;
                     }
-                     break;
+                    break;
                    case size = "Large":
                        price = 7000;
                        if (cruste === "Thin Crust") {
-                        total = (price * number) +1000;
+                        total = price +1000 ;
                     } else if (cruste === "Thin Crust") {
-                        total = (price * number)+ 2000;
+                        total = price + 2000;
                     } else if (cruste === "Deep Crust") {
-                        total = (price * number)+ 2500;
+                        total = price + 2500;
                     }else if (cruste === "Crunchy Crust") {
-                      total = (price * number)+ 1500; 
+                      total = price + 1500; 
                     }else {
-                        total = (price * number) + 5000;
+                        total = price  + 5000;
                     }
                     break;
                }
@@ -85,44 +85,44 @@ $(document).ready(function() {
                 case size = "Small":
                     price = 3500;
                     if (cruste === "Thin Crust") {
-                        total = (price * number) +1000;
+                        total = price +1000 ;
                     } else if (cruste === "Thin Crust") {
-                        total = (price * number)+ 2000;
+                        total = price + 2000;
                     } else if (cruste === "Deep Crust") {
-                        total = (price * number)+ 2500;
+                        total = price + 2500;
                     }else if (cruste === "Crunchy Crust") {
-                      total = (price * number)+ 1500; 
+                      total = price + 1500; 
                     }else {
-                        total = (price * number) + 5000;
+                        total = price  + 5000;
                     }
                     break;
                 case size = "Medium":
                     price = 5000;
                     if (cruste === "Thin Crust") {
-                        total = (price * number) +1000;
+                        total = price +1000 ;
                     } else if (cruste === "Thin Crust") {
-                        total = (price * number)+ 2000;
+                        total = price + 2000;
                     } else if (cruste === "Deep Crust") {
-                        total = (price * number)+ 2500;
+                        total = price + 2500;
                     }else if (cruste === "Crunchy Crust") {
-                      total = (price * number)+ 1500; 
+                      total = price + 1500; 
                     }else {
-                        total = (price * number) + 5000;
+                        total = price  + 5000;
                     }
                     break;
                  
                 case size = "Large":
                     price = 7000;
                     if (cruste === "Thin Crust") {
-                        total = (price * number) +1000;
+                        total = price +1000 ;
                     } else if (cruste === "Thin Crust") {
-                        total = (price * number)+ 2000;
+                        total = price + 2000;
                     } else if (cruste === "Deep Crust") {
-                        total = (price * number)+ 2500;
+                        total = price + 2500;
                     }else if (cruste === "Crunchy Crust") {
-                      total = (price * number)+ 1500; 
+                      total = price + 1500; 
                     }else {
-                        total = (price * number) + 5000;
+                        total = price  + 5000;
                     }
                     break;
             }
@@ -132,43 +132,43 @@ $(document).ready(function() {
              case size = "Small":
                  price = 3500;
                  if (cruste === "Thin Crust") {
-                    total = (price * number) +1000;
+                    total = price +1000 ;
                 } else if (cruste === "Thin Crust") {
-                    total = (price * number)+ 2000;
+                    total = price + 2000;
                 } else if (cruste === "Deep Crust") {
-                    total = (price * number)+ 2500;
+                    total = price + 2500;
                 }else if (cruste === "Crunchy Crust") {
-                  total = (price * number)+ 1500; 
+                  total = price + 1500; 
                 }else {
-                    total = (price * number) + 5000;
+                    total = price  + 5000;
                 }
                 break;
              case size = "Medium":
                  price = 5000;
                  if (cruste === "Thin Crust") {
-                    total = (price * number) +1000;
+                    total = price +1000 ;
                 } else if (cruste === "Thin Crust") {
-                    total = (price * number)+ 2000;
+                    total = price + 2000;
                 } else if (cruste === "Deep Crust") {
-                    total = (price * number)+ 2500;
+                    total = price + 2500;
                 }else if (cruste === "Crunchy Crust") {
-                  total = (price * number)+ 1500; 
+                  total = price + 1500; 
                 }else {
-                    total = (price * number) + 5000;
+                    total = price  + 5000;
                 }
                 break;
              case size = "Large":
                  price = 7000;
                  if (cruste === "Thin Crust") {
-                    total = (price * number) +1000;
+                    total = price +1000 ;
                 } else if (cruste === "Thin Crust") {
-                    total = (price * number)+ 2000;
+                    total = price + 2000;
                 } else if (cruste === "Deep Crust") {
-                    total = (price * number)+ 2500;
+                    total = price + 2500;
                 }else if (cruste === "Crunchy Crust") {
-                  total = (price * number)+ 1500; 
+                  total = price + 1500; 
                 }else {
-                    total = (price * number) + 5000;
+                    total = price  + 5000;
                 }
                 break;
          }
@@ -178,43 +178,43 @@ $(document).ready(function() {
           case size = "Small":
               price = 3500;
               if (cruste === "Thin Crust") {
-                total = (price * number) +1000;
+                total = price +1000 ;
             } else if (cruste === "Thin Crust") {
-                total = (price * number)+ 2000;
+                total = price + 2000;
             } else if (cruste === "Deep Crust") {
-                total = (price * number)+ 2500;
+                total = price + 2500;
             }else if (cruste === "Crunchy Crust") {
-              total = (price * number)+ 1500; 
+              total = price + 1500; 
             }else {
-                total = (price * number) + 5000;
+                total = price  + 5000;
             }
             break;
           case size = "Medium":
               price = 5000;
               if (cruste === "Thin Crust") {
-                total = (price * number) +1000;
+                total = price +1000 ;
             } else if (cruste === "Thin Crust") {
-                total = (price * number)+ 2000;
+                total = price + 2000;
             } else if (cruste === "Deep Crust") {
-                total = (price * number)+ 2500;
+                total = price + 2500;
             }else if (cruste === "Crunchy Crust") {
-              total = (price * number)+ 1500; 
+              total = price + 1500; 
             }else {
-                total = (price * number) + 5000;
+                total = price  + 5000;
             }
             break;
           case size = "Large":
               price = 7000;
               if (cruste === "Thin Crust") {
-                total = (price * number) +1000;
+                total = price +1000 ;
             } else if (cruste === "Thin Crust") {
-                total = (price * number)+ 2000;
+                total = price + 2000;
             } else if (cruste === "Deep Crust") {
-                total = (price * number)+ 2500;
+                total = price + 2500;
             }else if (cruste === "Crunchy Crust") {
-              total = (price * number)+ 1500; 
+              total = price + 1500; 
             }else {
-                total = (price * number) + 5000;
+                total = price  + 5000;
             }
             break;
       }
@@ -224,43 +224,43 @@ $(document).ready(function() {
           case size = "Small":
               price = 3500;
               if (cruste === "Thin Crust") {
-                total = (price * number) +1000;
+                total = price +1000 ;
             } else if (cruste === "Thin Crust") {
-                total = (price * number)+ 2000;
+                total = price + 2000;
             } else if (cruste === "Deep Crust") {
-                total = (price * number)+ 2500;
+                total = price + 2500;
             }else if (cruste === "Crunchy Crust") {
-              total = (price * number)+ 1500; 
+              total = price + 1500; 
             }else {
-                total = (price * number) + 5000;
+                total = price  + 5000;
             }
             break;
           case size = "Medium":
               price = 5000;
               if (cruste === "Thin Crust") {
-                total = (price * number) +1000;
+                total = price +1000 ;
             } else if (cruste === "Thin Crust") {
-                total = (price * number)+ 2000;
+                total = price + 2000;
             } else if (cruste === "Deep Crust") {
-                total = (price * number)+ 2500;
+                total = price + 2500;
             }else if (cruste === "Crunchy Crust") {
-              total = (price * number)+ 1500; 
+              total = price + 1500; 
             }else {
-                total = (price * number) + 5000;
+                total = price  + 5000;
             }
             break;
           case size = "Large":
               price = 7000;
               if (cruste === "Thin Crust") {
-                total = (price * number) +1000;
+                total = price +1000 ;
             } else if (cruste === "Thin Crust") {
-                total = (price * number)+ 2000;
+                total = price + 2000;
             } else if (cruste === "Deep Crust") {
-                total = (price * number)+ 2500;
+                total = price + 2500;
             }else if (cruste === "Crunchy Crust") {
-              total = (price * number)+ 1500; 
+              total = price + 1500; 
             }else {
-                total = (price * number) + 5000;
+                total = price  + 5000;
             }
             break;
       }
@@ -268,19 +268,19 @@ $(document).ready(function() {
              }
              switch (toppingd) {
               case topping = "Pepperoni":
-                  total = total + 1500;
+                  total = (total + 1500)*number;
                   break;
               case topping = "Mushrooms":
-                  total = total + 500;
+                  total = (total + 500)*number;
                   break;
               case topping = "Sausage":
-                  total = total + 1000;
+                  total = (total + 1000)*number;
                   break;
               case topping = "Extra cheese":
-                  total = total + 1000;
+                  total = (total + 1000)*number;
                   break;
               case topping = "Black olives":
-                  total = total + 1500;
+                  total = (total + 1500)*number;
                   break;
                 }
 
