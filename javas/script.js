@@ -21,40 +21,11 @@
   
 
 $(document).ready(function() {
-    
-  
-   
-  
-    $("form#orderz").submit(function(event) {
-      event.preventDefault();
-  
-      var typeA = $("select#sel1").val();
-      var sizeB = $("select#sel2").val();
-      var crustC = $("select#sel3").val();
-      var toppingD =$("select#sel4").val();
-      var numberz = $("input#sel5").val();
-     
-
-      var newPizza = new Pizza(typeA,sizeB,crustC,toppingD,numberz,total);
-  console.log(newPizza);
-  
-    
-    
-      $(".btn").last().click(function() {
-        $("#show").show();
-        $("#show h2").text(newPizza.type);
-        $(".type").text(newPizza.type);
-        $(".size").text(newPizza.size);
-        $(".crust").text(newPizza.crust);
-        $(".topping").text(newPizza.topping);
-        $(".numbers").text(newPizza.numbers);
-        $(".totalPrice").text(newPizza.totalPrice);
-
-        $("ul#addresses").text("");
-       
-      });
+     $("form#orderz").submit(function(event) {
+      event.preventDefault() 
     });
-      $(".btn").click(function() {
+    $(".btn").click(function() {
+     
         var typec = $("select#sel1").val();
       var sized = $("select#sel2").val();
       var cruste = $("select#sel3").val();
@@ -68,7 +39,7 @@ $(document).ready(function() {
                    case size = "Small":
                        price = 3500;
                        if (cruste === "Thin Crust") {
-                           total = (price * number) +1000;
+                           total = (price +1000)* number ;
                        } else if (cruste === "Thin Crust") {
                            total = (price * number)+ 2000;
                        } else if (cruste === "Deep Crust") {
@@ -314,7 +285,21 @@ $(document).ready(function() {
                 }
 
              console.log(total);
-            })
+            //})
+            var newPizza = new Pizza(typec,sized,cruste,toppingd,number,total);
+            console.log(newPizza);
+                  $("#show").show();
+                  $("#show h2").text();
+                  $(".type").text(newPizza.type);
+                  $(".size").text(newPizza.size);
+                  $(".crust").text(newPizza.crust);
+                  $(".topping").text(newPizza.topping);
+                  $(".numbers").text(newPizza.numbers).append(" pizza(s)");
+                  $(".totalPrice").text(newPizza.totalPrice).append("Rwf");
+          
+                  $("ul#addresses").text("");
+                 
+        });
       
   
     
